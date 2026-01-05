@@ -40,3 +40,11 @@ def calculate_grades(e):
     display(f"PE: {PEgrade}", target="information")
 
     display(f"General Weighted Average: {Finalaverage:.2f}", target="Average")
+
+    document.getElementById('Passing').innerHTML = ''
+
+    if Finalaverage > 74:
+        display(f'PASSED', target='Average')
+    else:
+        display(f'FAILED', target='Average')
+        
